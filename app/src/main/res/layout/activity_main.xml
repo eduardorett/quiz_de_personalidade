@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+  <CheckBox
+      android:id="@+id/btnCheckSadOne"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+android:text="Tenho cansaço sempre"
+      />
+
+    <CheckBox
+        android:id="@+id/btnCheckHappyOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sou energético"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheckSadOne"/>
+
+    <CheckBox
+        android:id="@+id/btnCheckSadtwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tenho pensamos tristes frequestes"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheckHappyOne"/>
+
+    <CheckBox
+        android:id="@+id/btnCheckHappyTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="estou sempre motivado"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheckSadtwo"/>
+
+    <CheckBox
+        android:id="@+id/btnCheckSadThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="me sinto sem proposito"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheckHappyTwo"/>
+
+    <CheckBox
+        android:id="@+id/btnCheckHappyTrhee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="faria qualquer coisa pelo que acredito"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheckSadThree"/>
+
+    <CheckBox
+        android:id="@+id/btnCheckSadFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="eu sempre faço tudo errado"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheckHappyTrhee"/>
+
+    <CheckBox
+        android:id="@+id/btnCheckHappyFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aprendo muito quando eu erro"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheckSadFour"/>
+
+    <CheckBox
+        android:id="@+id/btnCheckSadFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sou uma decepção"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheckHappyFour"/>
+
+    <CheckBox
+        android:id="@+id/btnCheckHappyFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="estou sempre animado pelo proximo dia"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheckSadFive"/>
+
+  <Button
+      android:id="@+id/btnResultado"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:text="RESULTADO"
+    app:layout_constraintTop_toBottomOf="@+id/btnCheckHappyFive"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"/>
+
+  <Button
+      android:id="@+id/btnReset"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="reset"
+      app:layout_constraintTop_toBottomOf="@+id/btnResultado"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"/>
+
+  <TextView
+    android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Esperando respostas..."
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      android:textSize="22sp"
+      app:layout_constraintTop_toBottomOf="@+id/btnCheckHappyFive"
+      />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
